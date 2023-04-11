@@ -24,12 +24,12 @@ df_opendatasus<-list.files(path="./dados",pattern="*.csv", full.names = TRUE) %>
 class(df_opendatasus)
 View(df_opendatasus)
 str(df_opendatasus) # apenas int e char
-summary(df)
+summary(df_opendatasus)
 
 # Filtro - 78-Classificacao Final do caso (5-SRAG por COVID-19)
 df_covid <- df_opendatasus %>% filter(CLASSI_FIN == "5")
-
-
+View(df_covid)
+summary(df_covid)
 
 
 
